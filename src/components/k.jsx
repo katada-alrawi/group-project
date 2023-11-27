@@ -4,6 +4,13 @@ function k() {
   return (
     <div>
       hallo 
+      Dkbgföäadofpl
+
+      df#lbgö#adfäbg
+      ,ödlafkbgmäöd
+      #+ö#
+      üld#fkbgölad
+      +üö
     </div>
   )
 }
