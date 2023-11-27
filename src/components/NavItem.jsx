@@ -1,3 +1,6 @@
+
+<NavItem label="Contact" isContact />
+
 const NavItem = ({ label, subItems }) => {
     return (
       <div className='relative text-white cursor-pointer hover:underline'>
