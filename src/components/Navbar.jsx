@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ const Navbar = () => {
           <NavItem label='About' subItems={['SubItem A', 'SubItem B', 'SubItem C']} />
           <NavItem label='Services' subItems={['Service 1', 'Service 2', 'Service 3', 'Service 4', 'Service 5']} />
           <NavItem label='Contact' subItems={['Email', 'Phone', 'Location']} />
+          <Link to="/sports">Sports</Link>
         </div>
       </div>
     </div>
