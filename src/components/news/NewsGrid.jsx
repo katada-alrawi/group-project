@@ -1,7 +1,9 @@
-import React from 'react';
+
 import NewsItem from './NewsItem';
 
 function NewsGrid({ items }) {
+  console.log('Items in NewsGrid:', items);
+
   return (
     <div className='news-grid'>
       {items.map((item, i) => (
