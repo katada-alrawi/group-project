@@ -1,0 +1,141 @@
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: sans-serif;
+    padding: 0 2rem;
+  }
+
+  .title{
+   text-align: center;
+   margin: 2rem 0;
+   font-size: 4rem; 
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1.2em;
+    padding: 0.5em 1em;
+    background: #201e1e;
+    border-radius: 3em;
+    color: pointer;
+    transition: 0.3s;
+
+}
+.menu .inactive {
+    background: #f7f5f5;
+    color: #c14b4b;
+    margin: 1rem;
+
+   
+   
+}
+.menu .active{
+    background: #b3aeae;
+    
+}
+.menu .inactive:hover {
+    background: #dddddddd;
+    cursor: pointer;
+
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+     justify-content: center;
+     justify-items: center;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 2.5em;
+}
+.article{
+    background: #faf8f8;
+    box-shadow: 0 0 10px rgba(0,0,0 .2);
+    width: 25em;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    padding-bottom:0.5em;
+    transition: 0.3s;
+    display: flex;
+    flex-direction:column ;
+
+}
+.article:hover{
+    box-shadow: 0 0 20px rgba(0,0,0.2);
+}
+
+.article-content {
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    flex-grow: 1;
+}
+
+
+.article-source {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 0.5 em;
+}
+
+.article-image { 
+    overflow: hidden;
+    margin-bottom:0.5em;
+    position: relative;
+    height: 15em;
+   }
+
+
+   .article-image img { 
+    position:absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: 0.7 ease-in-out;
+   }
+
+   .article:hover .article-image img {
+    transform: translate(-50%, -50%) scale(1.1);
+   }
+
+   .article p{
+    line-height: 25px;
+    color:red;
+   }
+
+   @media screen and (max-width: 1330px) {
+    html{
+        font-size: 14px;
+    }
+    .news-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+   }
+
+   @media screen and (max-width: 900px) {
+    .news-grid{
+        grid-template-columns: 1fr;
+    }
+   }
+
+   
