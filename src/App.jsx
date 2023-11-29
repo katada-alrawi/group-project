@@ -36,14 +36,12 @@ function App() {
       </Routes>
       </>
      <Footer />
-     
+      
 
-      <div className='App'>
-        <h1 className='title'>App</h1>
         
         
         
-        <Menu active={active} setActive={setActive} setPopularity={setPopula
+     
     </div>
   );
 }
