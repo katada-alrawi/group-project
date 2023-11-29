@@ -10,10 +10,7 @@ const Navbar = () => {
 
         {/* Navigation components */}
         <div className='flex space-x-4'>
-          <NavItem label='Home' subItems={['SubItem 1', 'SubItem 2', 'SubItem 3', 'SubItem 4']} />
-          <NavItem label='About' subItems={['SubItem A', 'SubItem B', 'SubItem C']} />
-          <NavItem label='Services' subItems={['Service 1', 'Service 2', 'Service 3', 'Service 4', 'Service 5']} />
-          <NavItem label='Contact' subItems={['Email', 'Phone', 'Location']} />
+  
           <Link to="/sports">Sports</Link>
         </div>
       </div>
