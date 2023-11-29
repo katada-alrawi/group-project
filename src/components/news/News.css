@@ -26,25 +26,32 @@
     font-size: 1em;
     padding: 1.2em;
     padding: 0.5em 1em;
-    background: #eee;
+    background: #201e1e;
     border-radius: 3em;
     color: pointer;
     transition: 0.3s;
 
 }
 .menu .inactive {
-    background: #eee;
+    background: #f7f5f5;
+    color: #c14b4b;
+    margin: 1rem;
+
+   
+   
 }
 .menu .active{
-    background: #aeaeae;
+    background: #b3aeae;
+    
 }
 .menu .inactive:hover {
     background: #dddddddd;
+    cursor: pointer;
 
 }
 .news-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-gap: 2rem;
     margin: 2rem 0;
      justify-content: center;
@@ -54,7 +61,7 @@
      padding: 2.5em;
 }
 .article{
-    background: #fff;
+    background: #faf8f8;
     box-shadow: 0 0 10px rgba(0,0,0 .2);
     width: 25em;
     border-radius: 8px;
@@ -113,7 +120,7 @@ gap: 0.5 em;
 
    .article p{
     line-height: 25px;
-    color: #555;
+    color:red;
    }
 
    @media screen and (max-width: 1330px) {
@@ -130,3 +137,5 @@ gap: 0.5 em;
         grid-template-columns: 1fr;
     }
    }
+
+   

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './News.css'
 function Menu({ active, setActive, setPopularity }) {
   const links = [
     { id: 1, name: 'General', value: 'general' },

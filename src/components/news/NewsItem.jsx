@@ -1,9 +1,7 @@
 import React from 'react';
 
 function NewsItem({ item }) {
-  if (!item) {
-    return null;
-  }
+  console.log('Item in NewsItem:', item);
 
   const websiteUrl = item.url || '';
   const website = websiteUrl.split('https://').pop().split('/')[0];
@@ -16,7 +14,7 @@ function NewsItem({ item }) {
     <div>
       <a href={websiteUrl} className='article' target="_blank" rel="noopener noreferrer">
         <div className='article-image'>
-          <img src={item.imageSrc || ''} alt='' />
+          <img src={item.urlToImage || ''} alt='' />
         </div>
         <div className='article-content'>
           <div className='article-source'>
