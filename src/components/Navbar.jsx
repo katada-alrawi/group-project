@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
+
+        {/* Navigation components */}
+        <div className='flex space-x-4'>
+  
+          <Link to="/sports">Sports</Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 
 

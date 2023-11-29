@@ -1,7 +1,14 @@
+
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Sports from "./pages/sports";
+import PageNotFound from "./pages/pageNotFound";
+import SingleLeague from "./pages/singleLeague";
 import React, { useEffect, useState } from 'react';
-import './index.css';
 import { Navbar, NavItem } from './components/Navbar';  // Import named exports
-import Footer from './components/Footer';
+
 
 import {  Route, Routes} from 'react-router-dom';
 import Weather from './pages/weather';
@@ -27,24 +34,24 @@ function App() {
   }, [popularity]);
 
   return (
+    
+      
+   
     <div className='min-h-screen font-poppins bg-gradient-to-r from-[#ec0b0bc8] to-[#0d205a] text-white'>                    
      <Navbar />
       <>
       <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/weather' element={<Weather />} />
+            <Route path="/sports" element={<Sports />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/single-league/:id" element={<SingleLeague />} />
       </Routes>
       </>
      <Footer />
      
 
-      <div className='App'>
-        <h1 className='title'>App</h1>
-        
-        
-        
-        <Menu active={active} setActive={setActive} setPopularity={setPopula
-    </div>
+     
   );
 }
 
