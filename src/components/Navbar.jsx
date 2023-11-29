@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
+import {  Link } from 'react-router-dom';
 
-const ContactInfo = () => (
-  <div className='flex flex-col text-black'>
-    <p>Email: katada.alrawi@education.com</p>
-    <p>Phone: 6546645</p>
-    <p>Location: Hamm</p>
-  </div>
-);
+
+
+
 
 const NavItem = ({ label, subItems, isContact }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -81,6 +78,8 @@ const Navbar = () => {
               "Service 5",
             ]}
           />
+          <Link to="/">Home</Link>
+        <Link to="/weather">Weather</Link>
           <NavItem label="Contact" isContact />
         </div>
       </div>

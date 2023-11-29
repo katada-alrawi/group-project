@@ -2,8 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './index.css';
 import { Navbar, NavItem } from './components/Navbar';  // Import named exports
 import Footer from './components/Footer';
+
+import {  Route, Routes} from 'react-router-dom';
+import Weather from './pages/weather';
+import Home from './pages/home';
 import Menu from './components/news/Menu';
 import NewsGrid from './components/news/NewsGrid';
+
 
 function App() {
   const [items, setItems] = useState([]);
@@ -22,16 +27,23 @@ function App() {
   }, [popularity]);
 
   return (
-    <div className='min-h-screen font-poppins bg-gradient-to-r from-[#ec0b0bc8] to-[#0d205a] text-white'>
+    <div className='min-h-screen font-poppins bg-gradient-to-r from-[#ec0b0bc8] to-[#0d205a] text-white'>                    
+     <Navbar />
+      <>
+      <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/weather' element={<Weather />} />
+      </Routes>
+      </>
+     <Footer />
+     
+
       <div className='App'>
         <h1 className='title'>App</h1>
-        <Navbar />
-        <Footer />
-        <NavItem /> {/* This might be causing the issue */}
-        <Menu active={active} setActive={setActive} setPopularity={setPopularity} />
-        <NewsGrid items={items} />
-        Hallo Katada
-      </div>
+        
+        
+        
+        <Menu active={active} setActive={setActive} setPopularity={setPopula
     </div>
   );
 }
