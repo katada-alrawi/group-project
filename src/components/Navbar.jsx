@@ -64,7 +64,9 @@ const Navbar = () => {
         
           <Link to="/">Home</Link>
         <Link to="/weather">Weather</Link>
-          <NavItem label="Contact" isContact />
+        <Link to="/sports">Sport</Link>
+        <Link to="/tech">Tech</Link>
+        <Link to="/contact">Contact</Link>
         </div>
       </div>
     </div>

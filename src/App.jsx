@@ -8,7 +8,12 @@ import Weather from './pages/weather';
 import Home from './pages/home';
 import Menu from './components/news/Menu';
 import NewsGrid from './components/news/NewsGrid';
-
+import Sports from "./pages/sports";
+import PageNotFound from "./pages/pageNotFound";
+import SingleLeague from  "./pages/singleLeague.jsx"
+import News from './components/news/News';
+import Tech from './components/news/tech';
+import Contact from './pages/contact';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -33,6 +38,11 @@ function App() {
       <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/weather' element={<Weather />} />
+            <Route path="/sports" element={<Sports />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/single-league/:id" element={<SingleLeague />} />
+        <Route path='/tech' element={<Tech />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       </>
      <Footer />
